@@ -1,25 +1,21 @@
+
+//https://www.youtube.com/watch?v=dzOrUmK4Qyw&t=143s
+
 import React from 'react';
-import logo from './logo.svg';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import './App.css';
+import './components/navbar/NavBar.js';
+import NavBar from './components/navbar/NavBar';
+import Search from './components/search/Search';
 
 function App() {
   return (
+    <MuiThemeProvider>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar/>
+      <Search/>
     </div>
+    </MuiThemeProvider>
   );
 }
 
