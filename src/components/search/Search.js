@@ -10,7 +10,7 @@ class Search extends Component {
     searchText: "",
     amount: 15,
     apiUrl: "https://pixabay.com/api",
-    apiKey: "14049527-4d16ff06e4c92347794bb62d7",
+    apiKey: "PIXABAY API KEY",
     images: []
   };
   
